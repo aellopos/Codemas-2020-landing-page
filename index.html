@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,48 @@
 </head>
 
 <body>
-    
+    <section class="advent-container">
+        <div class="advent-item" id="advent-item-1" onmouseout="item1Out()" onmouseover="item1In()">
+            <div id="item-number-1">1</div>
+            <div class="non-active" id="item-content-1">
+                <h2>1. ADVENT</h2>
+                <p>
+                    Tento týden si stáhneme potřebné materiály a vytvoříme základní strukturu naší krásné stránky.
+                </p>
+                <a href="#">ČTI VÍCE ></a>
+            </div>
+        </div>
+        <div class="advent-item advent-item-not-visible">
+            2
+        </div>
+        <div class="advent-item advent-item-not-visible">
+            3
+        </div>
+        <div class="advent-item advent-item-not-visible">
+            4
+        </div>
+    </section>
+
+    <script>
+        let item1 = document.querySelector("#advent-item-1");
+        let itemContent1 = document.querySelector("#item-content-1");
+        let itemNumber1 = document.querySelector("#item-number-1");
+
+        function item1In() {
+            itemNumber1.classList.toggle("non-active");
+            item1.style.backgroundColor = "white";
+            itemContent1.classList.toggle("active");
+            itemContent1.classList.toggle("non-active");
+
+        }
+
+        function item1Out() {
+            itemNumber1.classList.toggle("non-active");
+            item1.style.background = "none";
+            itemContent1.classList.toggle("active");
+            itemContent1.classList.toggle("non-active");
+        }
+    </script>
 </body>
+
 </html>
