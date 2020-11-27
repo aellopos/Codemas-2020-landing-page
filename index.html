@@ -12,9 +12,8 @@
 
 <body>
     <section class="advent-container">
-        <div class="advent-item" id="advent-item-1" onmouseout="item1Out(0)" onmouseover="item1In(0)">
-            <div id="item-number">1</div>
-            <div class="non-active" id="item-content">
+        <div class="advent-item bg-color-white">
+            <div class="advent-item-content">
                 <h2>1. ADVENT</h2>
                 <p>
                     Tento týden si stáhneme potřebné materiály a vytvoříme základní strukturu naší krásné stránky.
@@ -22,58 +21,16 @@
                 <a href="#">ČTI VÍCE ></a>
             </div>
         </div>
-        <div class="advent-item advent-item-not-visible" id="advent-item-1" onmouseout="item1Out(1)" onmouseover="item1In(1)">
-            <div id="item-number">2</div>
-            <div class="non-active" id="item-content">
-                <h2>2. ADVENT</h2>
-                <p>
-                    Tento týden si stáhneme potřebné materiály a vytvoříme základní strukturu naší krásné stránky.
-                </p>
-                <a href="#">ČTI VÍCE ></a>
-            </div>
+        <div class="advent-item">
+            2
         </div>
-        <div class="advent-item advent-item-not-visible" id="advent-item-1" onmouseout="item1Out(2)" onmouseover="item1In(2)">
-            <div id="item-number">3</div>
-            <div class="non-active" id="item-content">
-                <h2>3. ADVENT</h2>
-                <p>
-                    Tento týden si stáhneme potřebné materiály a vytvoříme základní strukturu naší krásné stránky.
-                </p>
-                <a href="#">ČTI VÍCE ></a>
-            </div>
+        <div class="advent-item">
+            3
         </div>
-        <div class="advent-item advent-item-not-visible" id="advent-item-1" onmouseout="item1Out(3)" onmouseover="item1In(3)">
-            <div id="item-number">4</div>
-            <div class="non-active" id="item-content">
-                <h2>4. ADVENT</h2>
-                <p>
-                    Tento týden si stáhneme potřebné materiály a vytvoříme základní strukturu naší krásné stránky.
-                </p>
-                <a href="#">ČTI VÍCE ></a>
-            </div>
+        <div class="advent-item">
+            4
         </div>
     </section>
-
-    <script>
-        let item = document.querySelectorAll(".advent-item");
-        let itemContent = document.querySelectorAll("#item-content");
-        let itemNumber = document.querySelectorAll("#item-number");
-
-        function item1In(id) {
-            item[id].style.backgroundColor = "white";
-            itemNumber[id].classList.toggle("non-active");
-            itemContent[id].classList.toggle("active");
-            itemContent[id].classList.toggle("non-active");
-
-        }
-
-        function item1Out(id) {
-            itemNumber[id].classList.toggle("non-active");
-            item[id].style.background = "none";
-            itemContent[id].classList.toggle("active");
-            itemContent[id].classList.toggle("non-active");
-        }
-    </script>
 </body>
 
 </html>
