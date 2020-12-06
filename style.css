@@ -31,6 +31,10 @@ body {
     font-size: 60px;
 }
 
+.advent-item-content p {
+    height: 100px;
+}
+
 h2 {
     font-size: 32px;
     text-align: center;
