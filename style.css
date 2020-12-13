@@ -118,4 +118,12 @@ a:hover {
     .advent-item {
         height: 330px;
     }
+
+    .pop-up-buttons {
+        flex-direction: column;
+    }
+
+    .pop-up-buttons a {
+        margin-top: 10px;
+    }
 }
