@@ -46,14 +46,19 @@
         </div>
     </section>
 
-    <div class="pop-up" id="pop-up-3">
+    <div class="pop-up pop-up-hidden" id="pop-up-3">
         <div class="pop-up-content">
-            <p>Začalo tě kódování bavit? Super! Czechitas nabízí různé IT kurzy určené převážně pro ženy a děti – od programování po datovou analytiku. Mrkni, jak se můžeš dál vzdělávat. </p>
+            <p>Začalo tě kódování bavit? Super! Czechitas nabízí různé IT kurzy určené převážně pro ženy a děti – od
+                programování po datovou analytiku. Mrkni, jak se můžeš dál vzdělávat. </p>
             <div class="pop-up-buttons">
-                <a target="_blank" href="https://www.czechitas.cz/cs/kalendar-akci#stav-checkbox-dropdown:pathGroup=.registraceOtevrena|views:view=jplist-list-view">Mrkni na naše kurzy
-                ></a>
-                <a target="_blank" href="https://www.czechitas.cz/cs/co-delame/chci-se-ucit-online/kurzy/codemas2020/3-advent">Pokračuj na článek
-                ></a>
+                <a target="_blank"
+                    href="https://www.czechitas.cz/cs/kalendar-akci#stav-checkbox-dropdown:pathGroup=.registraceOtevrena|views:view=jplist-list-view">Mrkni
+                    na naše kurzy
+                    ></a>
+                <a target="_blank"
+                    href="https://www.czechitas.cz/cs/co-delame/chci-se-ucit-online/kurzy/codemas2020/3-advent">Pokračuj
+                    na článek
+                    ></a>
             </div>
         </div>
     </div>
@@ -61,9 +66,17 @@
     <script>
         let popUp3 = document.querySelector("#pop-up-3");
         let advent3 = document.querySelector("#advent-3");
-        advent3.addEventListener("click", function popUp3() {
+        advent3.addEventListener("click", ShowPopUp3);
+
+        function ShowPopUp3() {
             popUp3.style.display = "block";
-        });
+        }
+
+        window.onclick = function (event) {
+            if (event.target == popUp3) {
+                popUp3.style.display = "none";
+            }
+        }
     </script>
 </body>
 
