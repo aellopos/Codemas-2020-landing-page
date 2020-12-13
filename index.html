@@ -32,8 +32,14 @@
                     ></a>
             </div>
         </div>
-        <div class="advent-item">
-            3
+        <div class="advent-item bg-color-white">
+            <div class="advent-item-content">
+                <h2>3. ADVENT</h2>
+                <p>
+                    3. advent zasvětíme stylování naší mobilní verze a začneme stylovat počítačovou verzi webu.
+                </p>
+                <a href="#" id="advent-3">ČTI VÍCE></a>
+            </div>
         </div>
         <div class="advent-item">
             4
@@ -54,9 +60,10 @@
 
     <script>
         let popUp3 = document.querySelector("#pop-up-3");
-        let advent3 = document.querySelector("");
-
-        popUp3.style.display = "block";
+        let advent3 = document.querySelector("#advent-3");
+        advent3.addEventListener("click", function popUp3() {
+            popUp3.style.display = "block";
+        });
     </script>
 </body>
 

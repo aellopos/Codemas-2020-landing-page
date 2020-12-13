@@ -83,6 +83,7 @@ a:hover {
 }
 
 .pop-up {
+  display: none;
   position: fixed; 
   z-index: 999;
   padding-top: 20%; 
