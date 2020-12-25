@@ -82,14 +82,6 @@ a:hover {
     background-color: white;
 }
 
-.pop-up-hidden {
-    display: none;
-}
-
-.pop-up-active {
-    display: block;
-}
-
 .pop-up {
   position: fixed; 
   z-index: 999;

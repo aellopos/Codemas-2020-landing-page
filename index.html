@@ -36,13 +36,19 @@
             <div class="advent-item-content">
                 <h2>3. ADVENT</h2>
                 <p>
-                    3. advent zasvětíme stylování naší mobilní verze a začneme stylovat počítačovou verzi webu.
+                    Zaměříme se na stylování naší mobilní verze a začneme stylovat počítačovou verzi webu.
                 </p>
-                <a href="#" id="advent-3">ČTI VÍCE></a>
+                <a href="#" id="advent-3">ČTI VÍCE ></a>
             </div>
         </div>
-        <div class="advent-item">
-            4
+        <div class="advent-item bg-color-white">
+            <div class="advent-item-content">
+                <h2>4. ADVENT</h2>
+                <p>
+                    Dokončíme vánoční přání, které budeš moct rovnou poslat svým blízkým.
+                </p>
+                <a href="#" id="advent-4">ČTI VÍCE ></a>
+            </div>
         </div>
     </section>
 
@@ -52,7 +58,7 @@
                 programování po datovou analytiku. Mrkni, jak se můžeš dál vzdělávat. </p>
             <div class="pop-up-buttons">
                 <a target="_blank"
-                    href="https://www.czechitas.cz/cs/kalendar-akci#stav-checkbox-dropdown:pathGroup=.registraceOtevrena|views:view=jplist-list-view">Mrkni
+                    href="https://www.czechitas.cz/cs/kalendar-akci?utm_source=web&utm_medium=organic&utm_campaign=Codemas_3#stav-checkbox-dropdown:pathGroup=.registraceOtevrena%7Cviews:view=jplist-list-view">Mrkni
                     na naše kurzy
                     ></a>
                 <a target="_blank"
@@ -63,18 +69,42 @@
         </div>
     </div>
 
+    <div class="pop-up pop-up-hidden" id="pop-up-4">
+        <div class="pop-up-content">
+            <p>Máme radost, že jsi už jen pár kroků od dokončení svého vánočního přání a to chceme odměnit! Soutěž s námi o ceny z dílny Czechitas!</p>
+            <div class="pop-up-buttons">
+                <a target="_blank"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSd5KMNnbNrBaFfwecrCUu6Y_ERj_Wv50EoDCwSwAz-YmWkTxw/viewform?usp=sf_link">Mrkni
+                    Soutěž o ceny ></a>
+                <a target="_blank"
+                    href="https://www.czechitas.cz/cs/co-delame/chci-se-ucit-online/kurzy/codemas2020/4-advent">
+                    Pokračuj na článek ></a>
+            </div>
+        </div>
+    </div>
+
     <script>
         let popUp3 = document.querySelector("#pop-up-3");
         let advent3 = document.querySelector("#advent-3");
         advent3.addEventListener("click", ShowPopUp3);
+        let popUp4 = document.querySelector("#pop-up-4");
+        let advent4 = document.querySelector("#advent-4");
+        advent4.addEventListener("click", ShowPopUp4);
 
         function ShowPopUp3() {
             popUp3.style.display = "block";
         }
 
+        function ShowPopUp4() {
+            popUp4.style.display = "block";
+        }
+
         window.onclick = function (event) {
             if (event.target == popUp3) {
                 popUp3.style.display = "none";
+            }
+            if (event.target == popUp4) {
+                popUp4.style.display = "none";
             }
         }
     </script>
